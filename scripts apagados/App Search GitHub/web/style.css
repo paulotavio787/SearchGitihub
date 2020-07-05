@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(17, 17, 17);
+}
+
+strong{
+    color: beige;
+    font-size: 25px;
+}
+p{
+    color: beige;
+    margin: 5px 0;
+}
+a{
+    color: cyan;
+}
+
+img{
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+
+    border: solid;
+    border-radius: 20px;
+    border-color: rgba(0, 255, 255, 0);
+}
+
+li{
+    clear: both;
+    margin-top: 20px;
+    border: solid;
+    border-color: rgb(34, 34, 34);
+    background-color:  rgb(34, 34, 34);;
+    border-radius: 20px;
+    border-bottom-width: 20px;
+}
+
+input{
+    margin-left: 675px;
+}
+
+span{
+    color: beige;
+}
+
+h1{
+    text-align: center;
+    color: beige;
+    font-size: 50px;
+}
