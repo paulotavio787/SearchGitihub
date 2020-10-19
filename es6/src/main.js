@@ -12,16 +12,15 @@ class App{
     //                                                              =>Registra os eventos
     registerHandlers(){ this.formEl.onsubmit = event => this.addRepository(event); }
 
-    setLoading(loading = true){
-        if(loading = true){
-            let loadingEl = document.createElement("span");
-            loadingEl.appendChild(document.createTextNode("Wait..."))
-            loadingEl.setAttribute("id", "loading");
+    setLoading(){
+        let loadingEl = document.getElementById("loading");
+        loadingEl.innerHTML = "wait..."
+    }
 
-            this.formEl.appendChild(loadingEl);
-        }else{
-            document.getElementById("loading").remove();
-        }
+    removeLoading(){
+        let loadingEl = document.getElementById("loading");
+        
+        loadingEl.innerHTML = ""
     }
     
     //                                                              =>Adiciona os repositorios
@@ -53,7 +52,7 @@ class App{
             alert("O repositório buscado não existe");
         }
 
-        this.setLoading(false);
+        this.removeLoading();
     }
     //                                                              =>Renderiza os repositorios
     render(){
