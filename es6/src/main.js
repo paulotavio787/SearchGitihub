@@ -53,7 +53,7 @@ class App{
             alert("O repositório buscado não existe");
         }
 
-        this.setLoading(loading = false);
+        this.setLoading(false);
     }
     //                                                              =>Renderiza os repositorios
     render(){
